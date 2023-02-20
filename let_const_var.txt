@@ -1,0 +1,14 @@
+Original ES5:
+var PI = 3.14;
+PI = 42; // stop me from doing this!
+
+ES2015:
+const PI = 3.14;
+Pi = 42; //TypeError: Cannot redefine a Constant Variable
+
+
+Quiz:
+1. [var] can be redeclared and hoisted while [let] cannot ([var] is also function scoped while [let] is block scoped)
+2. [const] is block scoped and cannot be redeclared redefined or hoisted while [var] is function scoped and capable of doing all three
+3. [let] can be redefined but [const] can't
+4. Hoisting is when the variable declared with [var] becomes declared (but not defined) at the top of their scope
